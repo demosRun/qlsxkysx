@@ -1,0 +1,190 @@
+body, html, .page, .page-box {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  min-height: 100%;
+}
+
+.owo-animation {
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+.owo-animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.owo-animation-forward {
+  z-index: 99;
+}
+
+img {
+  border: none;
+}
+
+[route-active="false"] {
+  display: none;
+}
+
+/* 清除浮动 */
+.clear:after {
+  content: "";
+  height: 0;
+  line-height: 0;
+  display: block;
+  visibility: hidden;
+  clear: both;
+  zoom: 1;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.home {
+  background-image: url('../resource/bg.jpg');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-color: #f7f7f7;
+}
+
+.item-1 {
+  width: 1540px;
+  height: 696px;
+  margin: 0 auto;
+  background-image: url('../resource/item-1.png');
+  position: relative;
+}
+
+.item-1 .left h1 {
+  color: #adcae5;
+  font-size: 43px;
+  position: absolute;
+  top: 220px;
+  left: 220px;
+}
+
+.item-1 .left p {
+  position: absolute;
+  top: 305px;
+  width: 670px;
+  font-size: 21px;
+  left: 220px;
+  color: white;
+  line-height: 1.8;
+  text-indent: 2em;
+}
+
+.item-1 .left p a {
+  color: #ffe21e;
+}
+
+.item-1 .right ul {
+  position: absolute;
+  left: 970px;
+  top: 232px;
+  font-size: 21px;
+  line-height: 47px;
+  width: 387px;
+  color: white;
+}
+
+.item-1 .right ul li {
+  background-image: url('../resource/doit.png');
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 24px;
+}
+
+.item-1 .right ul a {
+  color: white;
+}
+
+.item-1 .right .more {
+  position: absolute;
+  left: 1230px;
+  top: 540px;
+  cursor: pointer;
+}
+
+.top-placeholder {
+  height: 540px;
+}
+
+.so {
+  position: absolute;
+}
+
+.item-2 {
+  width: 1920px;
+  height: 1050px;
+  margin: 0 auto;
+  position: relative;
+  background-image: url('../resource/item-2.jpg');
+}
+
+.item-2 .so-0 {
+  right: 11%;
+  top: 0;
+  width: 871px;
+  height: 1049px;
+  background-position: center;
+  background-image: url('../resource/map411.png');
+}
+
+.item-2 .so-0 .so {
+  width: 75px;
+  height: 100px;
+  background-position: center;
+  background-image: url('../resource/map403.png');
+}
+
+.item-2 .so-0 .so-1 {
+  left: 558px;
+  top: 340px;
+}
+
+.item-2 .so-0 .so-2 {
+  left: 579px;
+  top: 744px;
+}
+
+.item-2 .so-0 .so-3 {
+  left: 536px;
+  top: 47px;
+}
+
+.item-2 .so-0 .so-4 {
+  left: 321px;
+  top: 256px;
+}
+
+.item-2 .so-0 .so-5 {
+  left: 513px;
+  top: 688px;
+}
+
+.item-2 .so-0 .so-6 {
+  left: 179px;
+  top: 732px;
+}
+
+.item-2 .so-0 .so-7 {
+  left: 572px;
+  top: 204px;
+}
+

@@ -1,0 +1,164 @@
+<template lang="pug">
+.home
+  //- 顶部占位符
+  .top-placeholder
+  .item-1
+    .left
+      h1 清凉盛夏 康养山西
+      p “潮”创意折射出对文化发展历史与现实的理性定位，对传统文化的礼敬与自豪，对当下文化发展道路的清晰与自觉“潮”创意折射出对文化发展历史与现实的理性定位，对传统文化的礼敬与自豪，对当下文化发展道路的清晰与自觉“潮”创意折射出对文化发展历史与现实的理性定位，对传统文化的礼敬与自豪，对当下文化发展道路的清晰与自觉<a href="#">【详情】</a>
+    .right
+      ul
+        li
+          a(href="#") 面前是危险困难 身来奋斗
+        li
+          a(href="#") 春是用来奋斗的来奋斗来奋斗
+        li
+          a(href="#") 我的选择 我的牵挂来奋斗
+        li
+          a(href="#") 不获全胜 决不收兵来奋斗来奋斗
+        li
+          a(href="#") 我要做女儿心中的战士来奋斗
+        li
+          a(href="#") 交了入党申请书
+      .more
+        img(src="@|more.png|")
+  //- 地图切换部分
+  .item-2
+    //- 地图
+    .so.so-0
+      .so.so-1
+      .so.so-2
+      .so.so-3
+      .so.so-4
+      .so.so-5
+      .so.so-6
+      .so.so-7
+</template>
+
+<script>
+  module.exports = {
+    created: function () {
+
+    }
+  }
+</script>
+
+
+<style lang="less">
+.home {
+  background-image: url('@|bg.jpg|');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-color: #f7f7f7;
+}
+.item-1 {
+  width: 1540px;
+  height: 696px;
+  margin: 0 auto;
+  background-image: url('@|item-1.png|');
+  position: relative;
+  .left {
+    h1 {
+      color: #adcae5;
+      font-size: 43px;
+      position: absolute;
+      top: 220px;
+      left: 220px;
+    }
+    p {
+      position: absolute;
+      top: 305px;
+      width: 670px;
+      font-size: 21px;
+      left: 220px;
+      color: white;
+      line-height: 1.8;
+      text-indent: 2em;
+      a {
+        color: #ffe21e;
+      }
+    }
+  }
+  .right {
+    ul {
+      position: absolute;
+      left: 970px;
+      top: 232px;
+      font-size: 21px;
+      line-height: 47px;
+      width: 387px;
+      color: white;
+      li {
+        background-image: url('@|doit.png|');
+        background-repeat: no-repeat;
+        background-position: left center;
+        padding-left: 24px;
+      }
+      a {
+        color: white;
+      }
+    }
+    .more {
+      position: absolute;
+      left: 1230px;
+      top: 540px;
+      cursor: pointer;
+    }
+  }
+}
+.top-placeholder {
+  height: 540px;
+}
+.so {
+  position: absolute;
+}
+.item-2 {
+  width: 1920px;
+  height: 1050px;
+  margin: 0 auto;
+  position: relative;
+  background-image: url('@|item-2.jpg|');
+  .so-0 {
+    right: 11%;
+    top: 0;
+    width: 871px;
+    height: 1049px;
+    background-position: center;
+    background-image: url('@|map411.png|');
+    .so {
+      width: 75px;
+      height: 100px;
+      background-position: center;
+      background-image: url('@|map403.png|');
+    }
+    .so-1 {
+      left: 558px;
+      top: 340px;
+    }
+    .so-2 {
+      left: 579px;
+      top: 744px;
+    }
+    .so-3 {
+      left: 536px;
+      top: 47px;
+    }
+    .so-4 {
+      left: 321px;
+      top: 256px;
+    }
+    .so-5 {
+      left: 513px;
+      top: 688px;
+    }
+    .so-6 {
+      left: 179px;
+      top: 732px;
+    }
+    .so-7 {
+      left: 572px;
+      top: 204px;
+    }
+  }
+}
+</style>
