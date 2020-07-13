@@ -24,15 +24,122 @@
         img(src="@|more.png|")
   //- 地图切换部分
   .item-2
+    .title 夏·养·山·西
     //- 地图
     .so.so-0
+      //- 对应七个地方
       .so.so-1
+        .edit
+          h1 五台山
+          img.show(src="@|show.png|")
+          p 故宫的“潮”创意折射出对文化发展历史与现实的理性定位，对传统文化的礼敬与自豪，对当下文化发展道路的清晰与自觉
       .so.so-2
+        .edit
+          h1 五台山2
+          img.show(src="@|show.png|")
+          p 2故宫的“潮”创意折射出对文化发展历史与现实的理性定位，对传统文化的礼敬与自豪，对当下文化发展道路的清晰与自觉
       .so.so-3
+        .edit
+          h1 五台山3
+          img.show(src="@|show.png|")
+          p 2故宫的“潮”创意折射出对文化发展历史与现实的理性定位，对传统文化的礼敬与自豪，对当下文化发展道路的清晰与自觉
       .so.so-4
+        .edit
+          h1 五台山4
+          img.show(src="@|show.png|")
+          p 2故宫的“潮”创意折射出对文化发展历史与现实的理性定位，对传统文化的礼敬与自豪，对当下文化发展道路的清晰与自觉
       .so.so-5
+        .edit
+          h1 五台山5
+          img.show(src="@|show.png|")
+          p 2故宫的“潮”创意折射出对文化发展历史与现实的理性定位，对传统文化的礼敬与自豪，对当下文化发展道路的清晰与自觉
       .so.so-6
+        .edit
+          h1 五台山6
+          img.show(src="@|show.png|")
+          p 2故宫的“潮”创意折射出对文化发展历史与现实的理性定位，对传统文化的礼敬与自豪，对当下文化发展道路的清晰与自觉
       .so.so-7
+        .edit
+          h1 五台山7
+          img.show(src="@|show.png|")
+          p 2故宫的“潮”创意折射出对文化发展历史与现实的理性定位，对传统文化的礼敬与自豪，对当下文化发展道路的清晰与自觉
+    .show-box
+  //- 多图预览部分
+  .item-3
+    //- 标题
+    .title-2 清·凉·太·行
+    .so.so-1
+      a(href="#" target="_blank")
+        img(src="@|173.png|")
+        .blinker
+          span 景点名称文字
+    .so.so-2
+      a(href="#" target="_blank")
+        img(src="@|175.png|")
+        .blinker
+          span 景点名称文字
+    .so.so-3
+      a(href="#" target="_blank")
+        img(src="@|177.png|")
+        .blinker
+          span 景点名称文字
+    .so.so-4
+      a(href="#" target="_blank")
+        img(src="@|178.png|")
+        .blinker
+          span 景点名称文字
+    .so.so-5
+      a(href="#" target="_blank")
+        img(src="@|180.png|")
+        .blinker
+          span 景点名称文字
+    .so.so-6
+      a(href="#" target="_blank")
+        img(src="@|173.png|")
+        .blinker
+          span 景点名称文字
+    .so.so-7
+      a(href="#" target="_blank")
+        img(src="@|175.png|")
+        .blinker
+          span 景点名称文字
+    .so.so-8
+      a(href="#" target="_blank")
+        img(src="@|177.png|")
+        .blinker
+          span 景点名称文字
+  //- 图说胜景
+  .item-4
+    //- 标题
+    .title-2 图·说·胜·景
+    plug(_name="module141" _src="https://template.owo.ink/dd34f42b0698caf4.owo")
+  
+  .item-5
+    //- 标题
+    .title-2 山·西·三·宝
+    //- 三张图片
+    .text.text-1 平遥推光漆
+    .so.so-1(o-hover="float")
+      a(href="#" target="_blank")
+        img(src="@|76.png|")
+    
+    .text.text-2 高平珐华器
+    .so.so-2(o-hover="float")
+      a(href="#" target="_blank")
+        img(src="@|242.png|")
+    
+    .text.text-3 新绛澄泥砚
+    .so.so-3(o-hover="float")
+      a(href="#" target="_blank")
+        img(src="@|241.png|")
+
+  //- 最美山西
+  .item-6
+    //- 标题
+    .title-2 最·美·山·西
+    plug(_name="module79" _src="https://template.owo.ink/f0c693dcb50fecf7.owo")
+  //- 底部版权信息
+  plug(_name="module2" _src="https://template.owo.ink/060579f0b4f1bcaa.owo")
 </template>
 
 <script>
@@ -160,5 +267,171 @@
       top: 204px;
     }
   }
+}
+.title {
+  width: 660px;
+  font-size: 80px;
+  color: #0e5496;
+  font-weight: bold;
+  font-family: SimSun;
+  position: absolute;
+  text-align: center;
+  height: 100px;
+  line-height: 100px;
+  left: 250px;
+  top: 66px;
+}
+.item-3 {
+  width: 1200px;
+  height: 929px;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 100px;
+  .blinker {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    opacity: 0;
+    transition: opacity 0.5s;
+    span {
+      background-image: url('@|play.png|');
+      background-repeat: no-repeat;
+      line-height: 63px;
+      background-position: left center;
+      padding-left: 72px;
+    }
+  }
+  .so:hover .blinker {
+    opacity: 1;
+  }
+  .so img {
+    width: 100%;
+    height: 100%;
+  }
+  .so-1 {
+    left: 0px;
+    top: 710px;
+    width: 390px;
+    height: 219px;
+  }
+  .so-2 {
+    left: 390px;
+    top: 0px;
+    width: 390px;
+    height: 219px;
+  }
+  .so-3 {
+    left: 390px;
+    top: 710px;
+    width: 390px;
+    height: 219px;
+  }
+  .so-4 {
+    left: 4px;
+    top: 0px;
+    width: 390px;
+    height: 219px;
+  }
+  .so-5 {
+    left: 810px;
+    top: 710px;
+    width: 390px;
+    height: 219px;
+  }
+  .so-6 {
+    left: 810px;
+    top: 461px;
+    width: 390px;
+    height: 219px;
+  }
+  .so-7 {
+    left: 810px;
+    top: 243px;
+    width: 390px;
+    height: 219px;
+  }
+  .so-8 {
+    left: 2px;
+    top: 243px;
+    width: 778px;
+    height: 437px;
+  }
+  .title-2 {
+    left: 764px;
+    position: absolute;
+  }
+}
+.title-2 {
+  width: 658px;
+  height: 163px;
+  background-image: url('@|titlr-bg.png|');
+  line-height: 163px;
+  text-align: center;
+  font-size: 57px;
+  color: #0e5496;
+  font-weight: bold;
+  font-family: 'SimSun';
+  margin: 0 auto;
+}
+.item-5 {
+  width: 1920px;
+  height: 1431px;
+  position: relative;
+  background-image: url('@|72.png|');
+  .text {
+    color: #8a4e3a;
+    font-size: 40px;
+    position: absolute;
+    width: 320px;
+    text-align: center;
+  }
+  .text-1 {
+    top: -20px;
+    left: 380px;
+  }
+  .text-2 {
+    left: 1208px;
+    top: 860px;
+  }
+  .text-3 {
+    left: 1116px;
+    top: 1401px;
+  }
+  .title-2 {
+    left: 1040px;
+    position: absolute;
+  }
+  .so {
+    box-shadow: 1px 1px 5px #614d4d;
+    a, img {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .so-1 {
+    left: 1005px;
+    top: 243px;
+    z-index: 2;
+  }
+  .so-2 {
+    left: 528px;
+    top: 366px;
+  }
+  .so-3 {
+    left: 359px;
+    top: 1015px;
+  }
+}
+.item-6, .item-5, .item-4 {
+  margin-top: 120px;
 }
 </style>
