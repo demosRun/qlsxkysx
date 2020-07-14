@@ -51,26 +51,26 @@ module.exports = {
   cursor: pointer;
 }
 .arrow-left {
-  background: url(http://www.people.com.cn/img/2016people/images/focus_left_b.png) no-repeat center;
+  background: url(@|left.png|) no-repeat center;
   position: absolute;
-  left: 0px;
+  left: -72px;
   top: 0;
   bottom: 0;
   margin: auto;
-  width: 36px;
-  height: 36px;
+  width: 53px;
+  height: 71px;
   z-index: 999;
 }
 
 .arrow-right {
-  background: url(http://www.people.com.cn/img/2016people/images/focus_right_b.png) no-repeat left bottom;
+  background: url('@|right.png|') no-repeat left bottom;
   position: absolute;
-  right: 0px;
+  right: -72px;
   top: 0;
   bottom: 0;
   margin: auto;
-  width: 36px;
-  height: 36px;
+  width: 53px;
+  height: 71px;
   z-index: 999;
 }
 

@@ -4,7 +4,7 @@ var autoScaleInfo = {
   // 设计高度
   deviseH: 1508,
   // 设计宽度PC
-  devisePCW: 1920,
+  devisePCW: 2220,
   // 设计高度PC
   devisePCH: 1080,
   // 缩放中心 目前只支持 middle 和 top
@@ -102,25 +102,23 @@ function getScale () {
       scaleBox.style.bottom = "-50%"
       scaleBox.style.margin = "auto"
     }
-    // 对专题适用的滚动页面
-    var rollList = document.getElementsByClassName('roll-box')
-    for (var index = 0; index < rollList.length; index++) {
-      var scaleBox = rollList[index];
-      var screenScale = window.innerWidth / window.innerHeight
-      var deviseScale = autoScaleInfo.devisePCW / autoScaleInfo.devisePCH
-      var scale = screenScale < deviseScale ? window.innerWidth / autoScaleInfo.devisePCW : window.innerHeight / autoScaleInfo.devisePCH
-      scaleBox.style.width = autoScaleInfo.devisePCW + 'px'
-      // scaleBox.style.height = autoScaleInfo.devisePCH + 'px'
-      autoScaleInfo.zoom = scale
-      // 判断使用zoom还是transform
-      if (navigator.userAgent.indexOf("Edge") > -1) {
-        scaleBox.style.transform = 'scale(' + autoScaleInfo.zoom + ', ' + autoScaleInfo.zoom + ') translate(0, 0)'
-      } else {
-        scaleBox.style.zoom = autoScaleInfo.zoom
-      }
-      scaleBox.style.transformOrigin = 'center'
-      scaleBox.style.margin = "0 auto"
+  }
+  // 对专题适用的滚动页面
+  var rollList = document.getElementsByClassName('roll-box')
+  for (var index = 0; index < rollList.length; index++) {
+    var scaleBox = rollList[index];
+    var scale = window.innerWidth / autoScaleInfo.devisePCW
+    scaleBox.style.width = autoScaleInfo.devisePCW + 'px'
+    // scaleBox.style.height = autoScaleInfo.devisePCH + 'px'
+    autoScaleInfo.zoom = scale
+    // 判断使用zoom还是transform
+    if (navigator.userAgent.indexOf("Edge") > -1) {
+      scaleBox.style.transform = 'scale(' + autoScaleInfo.zoom + ', ' + autoScaleInfo.zoom + ') translate(0, 0)'
+    } else {
+      scaleBox.style.zoom = autoScaleInfo.zoom
     }
+    scaleBox.style.transformOrigin = 'center'
+    scaleBox.style.margin = "0 auto"
   }
   // 只对手机生效
   if ((autoScaleInfo.innerWidth / autoScaleInfo.innerHeight) < 1) {

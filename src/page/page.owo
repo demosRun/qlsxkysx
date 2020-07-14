@@ -28,42 +28,58 @@
     //- 地图
     .so.so-0
       //- 对应七个地方
-      .so.so-1
+      .so.so-1.item(o-tap="activeIndex(1)" o-hover="grow")
+        .info 提示的文字
         .edit
           h1 五台山
-          img.show(src="@|show.png|")
+          img.show(src="@|180.png|")
           p 故宫的“潮”创意折射出对文化发展历史与现实的理性定位，对传统文化的礼敬与自豪，对当下文化发展道路的清晰与自觉
-      .so.so-2
+      .so.so-2.item(o-tap="activeIndex(2)" o-hover="grow")
+        .info 提示的文字
         .edit
           h1 五台山2
-          img.show(src="@|show.png|")
+          img.show(src="@|242.png|")
           p 2故宫的“潮”创意折射出对文化发展历史与现实的理性定位，对传统文化的礼敬与自豪，对当下文化发展道路的清晰与自觉
-      .so.so-3
+      .so.so-3.item(o-tap="activeIndex(3)" o-hover="grow")
+        .info 提示的文字
         .edit
           h1 五台山3
-          img.show(src="@|show.png|")
+          img.show(src="@|180.png|")
           p 2故宫的“潮”创意折射出对文化发展历史与现实的理性定位，对传统文化的礼敬与自豪，对当下文化发展道路的清晰与自觉
-      .so.so-4
+      .so.so-4.item(o-tap="activeIndex(4)" o-hover="grow")
+        .info 提示的文字
         .edit
           h1 五台山4
-          img.show(src="@|show.png|")
+          img.show(src="@|180.png|")
           p 2故宫的“潮”创意折射出对文化发展历史与现实的理性定位，对传统文化的礼敬与自豪，对当下文化发展道路的清晰与自觉
-      .so.so-5
+      .so.so-5.item(o-tap="activeIndex(5)" o-hover="grow")
+        .info 提示的文字
         .edit
           h1 五台山5
-          img.show(src="@|show.png|")
+          img.show(src="@|242.png|")
           p 2故宫的“潮”创意折射出对文化发展历史与现实的理性定位，对传统文化的礼敬与自豪，对当下文化发展道路的清晰与自觉
-      .so.so-6
+      .so.so-6.item(o-tap="activeIndex(6)" o-hover="grow")
+        .info 提示的文字
         .edit
           h1 五台山6
-          img.show(src="@|show.png|")
+          img.show(src="@|180.png|")
           p 2故宫的“潮”创意折射出对文化发展历史与现实的理性定位，对传统文化的礼敬与自豪，对当下文化发展道路的清晰与自觉
-      .so.so-7
+      .so.so-7.item(o-tap="activeIndex(7)" o-hover="grow")
+        .info 提示的文字
         .edit
           h1 五台山7
-          img.show(src="@|show.png|")
+          img.show(src="@|180.png|")
           p 2故宫的“潮”创意折射出对文化发展历史与现实的理性定位，对传统文化的礼敬与自豪，对当下文化发展道路的清晰与自觉
-    .show-box
+    .card
+      img(src="@|180.png|" width="520" height="330")
+      p 2故宫的“潮”创意折射出对文化发展历史与现实的理性定位，对传统文化的礼敬与自豪，对当下文化发展道路的清晰与自觉
+    //- 左侧装饰
+    .zhuangshi 五台山
+    //- 底部页码切换
+    .index-box
+      //- img.left-button(src="@|left.png|" o-tap="last" o-hover="grow")
+      span 1/7
+      //- img.right-button(src="@|right.png|" o-tap="next" o-hover="grow")
   //- 多图预览部分
   .item-3
     //- 标题
@@ -119,16 +135,19 @@
     .title-2 山·西·三·宝
     //- 三张图片
     .text.text-1 平遥推光漆
+    .conn.conn-1 平遥推光漆平遥推光漆平遥推光漆平遥推光漆平遥推光漆
     .so.so-1(o-hover="float")
       a(href="#" target="_blank")
         img(src="@|76.png|")
     
     .text.text-2 高平珐华器
+    .conn.conn-2 平遥推光漆平遥推光漆平遥推光漆平遥推光漆平遥推光漆
     .so.so-2(o-hover="float")
       a(href="#" target="_blank")
         img(src="@|242.png|")
     
     .text.text-3 新绛澄泥砚
+    .conn.conn-3 平遥推光漆平遥推光漆平遥推光漆平遥推光漆平遥推光漆
     .so.so-3(o-hover="float")
       a(href="#" target="_blank")
         img(src="@|241.png|")
@@ -144,9 +163,44 @@
 
 <script>
   module.exports = {
+    data: {
+      index: 1
+    },
     created: function () {
+      this.activeIndex(this.data.index)
+    },
+    activeIndex: function (index) {
+      let itemList = this.queryAll('.item-2 .item')
+      for (let index = 0; index < itemList.length; index++) {
+        const element = itemList[index];
+        element.classList.remove('active')
+      }
+      console.log(index)
+      this.query(`.item-2 .so-${index}`).classList.add('active')
+      this.data.index = parseInt(index)
+      this.query(`.item-2 .index-box span`).innerText = index + '/7'
+      // if (index >= 7) {
+      //   this.query('.item-2 .right-button').style.display = 'none'
+      // } else {
+      //   this.query('.item-2 .right-button').style.display = 'block'
+      // }
 
-    }
+      // if (index <= 1) {
+      //   this.query('.item-2 .left-button').style.display = 'none'
+      // } else {
+      //   this.query('.item-2 .left-button').style.display = 'block'
+      // }
+      // 替换图片和简介
+      this.query('.item-2 .card img').src = this.query(`.item-2 .so-${index} .edit .show`).src
+      this.query('.item-2 .card p').innerHTML = this.query(`.item-2 .so-${index} .edit p`).innerHTML
+      this.query('.item-2 .zhuangshi').innerHTML = this.query(`.item-2 .so-${index} .edit h1`).innerHTML
+    },
+    last: function () {
+      this.activeIndex(this.data.index - 1)
+    },
+    next: function () {
+      this.activeIndex(this.data.index + 1)
+    },
   }
 </script>
 
@@ -232,45 +286,57 @@
     height: 1049px;
     background-position: center;
     background-image: url('@|map411.png|');
+    .so.active {
+      background-image: url('@|map403.png|');
+      background-size: 67px;
+    }
     .so {
       width: 75px;
       height: 100px;
       background-position: center;
-      background-image: url('@|map403.png|');
+      background-repeat: no-repeat;
+      background-image: url('@|map404.png|');
+      background-size: 40px;
+      cursor: pointer;
+    }
+    .so:hover {
+      .info {
+        display: block;
+      }
     }
     .so-1 {
-      left: 558px;
-      top: 340px;
+      left: 548px;
+      top: 330px;
     }
     .so-2 {
-      left: 579px;
-      top: 744px;
+      left: 569px;
+      top: 734px;
     }
     .so-3 {
-      left: 536px;
-      top: 47px;
+      left: 526px;
+      top: 37px;
     }
     .so-4 {
-      left: 321px;
-      top: 256px;
+      left: 311px;
+      top: 246px;
     }
     .so-5 {
-      left: 513px;
-      top: 688px;
+      left: 503px;
+      top: 678px;
     }
     .so-6 {
-      left: 179px;
-      top: 732px;
+      left: 169px;
+      top: 722px;
     }
     .so-7 {
-      left: 572px;
-      top: 204px;
+      left: 562px;
+      top: 194px;
     }
   }
 }
 .title {
   width: 660px;
-  font-size: 80px;
+  font-size: 59px;
   color: #0e5496;
   font-weight: bold;
   font-family: SimSun;
@@ -393,6 +459,30 @@
     width: 320px;
     text-align: center;
   }
+  .conn {
+    color: #8a4e3a;
+    font-size: 27px;
+    position: absolute;
+    width: 360px;
+    text-align: left;
+    line-height: 39px;
+    font-family: SimSun;
+    font-weight: bold;
+    text-indent: 2em;
+  }
+  .conn-1 {
+    left: 527px;
+    top: 69px;
+  }
+  .conn-2 {
+    top: 435px;
+    left: 1473px;
+    width: 218px;
+  }
+  .conn-3 {
+    top: 1095px;
+    left: 1130px;
+  }
   .text-1 {
     top: -20px;
     left: 380px;
@@ -433,5 +523,73 @@
 }
 .item-6, .item-5, .item-4 {
   margin-top: 120px;
+}
+.edit {
+  display: none;
+}
+.item-2 {
+  .card {
+    position: absolute;
+    left: 360px;
+    top: 290px;
+    width: 520px;
+    background-color: white;
+    line-height: 44px;
+    font-size: 23px;
+    color: #333;
+  }
+  p {
+    padding: 15px;
+  }
+  a, img {
+    display: block;
+  }
+  .left-button, .right-button {
+    position: absolute;
+    cursor: pointer;
+  }
+  .index-box {
+    font-size: 40px;
+    color: #7c2f12;
+    position: absolute;
+    top: 829px;
+    left: 579px;
+    letter-spacing: 6px;
+  }
+  .left-button {
+    left: -45px;
+    width: 34px;
+  }
+  .right-button {
+    right: -40px;
+    top: -4px;
+    width: 34px;
+  }
+  .info {
+    position: absolute;
+    background-color: #ff5252;
+    color: white;
+    font-size: 26px;
+    width: 180px;
+    line-height: 50px;
+    padding: 0 10px;
+    border-radius: 6px;
+    left: 100%;
+    display: none;
+  }
+}
+.zhuangshi {
+  background-image: url("@|zhuangshi.png|");
+  position: absolute;
+  left: 257px;
+  top: 300px;
+  font-size: 51px;
+  width: 72px;
+  text-align: center;
+  color: #0e5495;
+  font-weight: bold;
+  padding-bottom: 52px;
+  background-repeat: no-repeat;
+  background-position: bottom center;
 }
 </style>

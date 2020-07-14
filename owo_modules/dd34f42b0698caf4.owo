@@ -14,8 +14,8 @@
         </div>
       </div>
     </div>
-    <img src="https://cunchu.site/owo/material/tuopin/left.png" class="swiper-button swiper-button-next" o-tap="swiperNext"/>
-    <img src="https://cunchu.site/owo/material/tuopin/left.png" class="swiper-button swiper-button-prev" o-tap="swiperPrev"/>
+    <img src="@|right.png|" class="swiper-button swiper-button-next" o-tap="swiperNext"/>
+    <img src="@|left.png|" class="swiper-button swiper-button-prev" o-tap="swiperPrev"/>
   </div>
 </template>
 
@@ -86,11 +86,10 @@
       background-image: none;
     }
     .swiper-button-next {
-      right: 0;
-      transform: rotate(180deg);
+      right: -10px;
     }
     .swiper-button-prev {
-      left: 0;
+      left: -10px;
     }
   }
   a {
