@@ -115,7 +115,7 @@
 			"merge": false,
 			"allAnimate": false,
 			"title": "{TAG_14226_TAG}",
-			"handleLink": false
+			"handleLink": true
 		}
 	}
 }

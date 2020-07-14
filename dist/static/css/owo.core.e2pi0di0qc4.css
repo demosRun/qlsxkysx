@@ -67,8 +67,8 @@ li {
 }
 
 .LbWMGSGs {
-  height: 260px;
-  width: 1300px;
+  height: 220px;
+  width: 1100px;
   margin: 0 50px;
   position: relative;
   margin: 0 auto;
@@ -76,12 +76,12 @@ li {
 
 .LbWMGSGs .swiper-container {
   height: 100%;
-  width: 1250px;
+  width: 1050px;
   position: relative;
 }
 
 .LbWMGSGs .swiper-container .swiper-item {
-  width: 370px;
+  width: 290px;
   height: 100%;
   position: absolute;
   left: 0;
@@ -128,7 +128,7 @@ li {
 
 .LbWMGSGs a img {
   width: 100%;
-  height: 220px;
+  height: 180px;
   margin: 0 auto;
   display: block;
 }
@@ -141,7 +141,7 @@ li {
   margin: 0 auto;
   color: #333333;
   line-height: 40px;
-  font-size: 20px;
+  font-size: 17px;
 }
 
 .LbWMGSGs .swiper-slide {
@@ -169,8 +169,8 @@ li {
 }
 
 .high1 {
-  width: 1200px;
-  height: 600px;
+  width: 1000px;
+  height: 560px;
   position: relative;
   margin: 0px auto;
 }
@@ -204,8 +204,8 @@ li {
 }
 
 .high1 .swiper-container {
-  height: 600px;
-  width: 1200px;
+  height: 560px;
+  width: 1000px;
 }
 
 .high1 .pagination {
@@ -224,7 +224,7 @@ li {
   position: absolute;
   bottom: 0;
   z-index: 999;
-  font-size: 22px;
+  font-size: 16px;
   left: 0;
   color: white;
   background-color: rgba(0, 0, 0, 0.6);
@@ -233,12 +233,12 @@ li {
   height: 60px;
   padding: 80px 0;
   position: relative;
-  font-size: 18px;
+  font-size: 14px;
   height: 60px;
   color: #000000;
   z-index: 999;
   width: 100%;
-  line-height: 38px;
+  line-height: 33px;
   text-align: center;
   background-color: transparent;
 }
@@ -254,6 +254,8 @@ li {
   height: 696px;
   margin: 0 auto;
   background-image: url('../resource/item-1.png');
+  transform: scale(0.8);
+  transform-origin: center center;
   position: relative;
 }
 
@@ -309,7 +311,7 @@ li {
 }
 
 .top-placeholder {
-  height: 540px;
+  height: 488px;
 }
 
 .so {
@@ -318,19 +320,21 @@ li {
 
 .item-2 {
   width: 1920px;
-  height: 1050px;
+  height: 1016px;
   margin: 0 auto;
   position: relative;
   background-image: url('../resource/item-2.jpg');
 }
 
 .item-2 .so-0 {
-  right: 11%;
+  right: 15%;
   top: 0;
   width: 871px;
   height: 1049px;
   background-position: center;
   background-image: url('../resource/map411.png');
+  transform: scale(0.7);
+  transform-origin: center center;
 }
 
 .item-2 .so-0 .so.active {
@@ -406,7 +410,8 @@ li {
   height: 929px;
   position: relative;
   margin: 0 auto;
-  margin-top: 100px;
+  transform: scale(0.8);
+  transform-origin: center center;
 }
 
 .item-3 .blinker {
@@ -509,7 +514,7 @@ li {
   background-image: url('../resource/titlr-bg.png');
   line-height: 163px;
   text-align: center;
-  font-size: 57px;
+  font-size: 47px;
   color: #0e5496;
   font-weight: bold;
   font-family: 'SimSun';
@@ -521,11 +526,13 @@ li {
   height: 1431px;
   position: relative;
   background-image: url('../resource/72.png');
+  transform: scale(0.8);
+  transform-origin: center center;
 }
 
 .item-5 .text {
   color: #8a4e3a;
-  font-size: 40px;
+  font-size: 33px;
   position: absolute;
   width: 320px;
   text-align: center;
@@ -533,7 +540,7 @@ li {
 
 .item-5 .conn {
   color: #8a4e3a;
-  font-size: 27px;
+  font-size: 25px;
   position: absolute;
   width: 360px;
   text-align: left;
@@ -609,7 +616,7 @@ li {
 .item-6,
 .item-5,
 .item-4 {
-  margin-top: 120px;
+  margin-top: 50px;
 }
 
 .edit {
@@ -618,22 +625,26 @@ li {
 
 .item-2 .card {
   position: absolute;
-  left: 360px;
+  left: 475px;
   top: 290px;
-  width: 520px;
+  width: 410px;
   background-color: white;
   line-height: 44px;
-  font-size: 23px;
+  font-size: 16px;
   color: #333;
 }
 
 .item-2 p {
   padding: 15px;
+  line-height: 34px;
+  text-indent: 2em;
 }
 
 .item-2 a,
 .item-2 img {
   display: block;
+  width: 100%;
+  height: auto;
 }
 
 .item-2 .left-button,
@@ -643,11 +654,11 @@ li {
 }
 
 .item-2 .index-box {
-  font-size: 40px;
+  font-size: 30px;
   color: #7c2f12;
   position: absolute;
-  top: 829px;
-  left: 579px;
+  top: 695px;
+  left: 642px;
   letter-spacing: 6px;
 }
 
@@ -664,13 +675,13 @@ li {
 
 .item-2 .info {
   position: absolute;
-  background-color: #ff5252;
+  background-color: #0d5595;
   color: white;
-  font-size: 26px;
+  font-size: 20px;
   width: 180px;
-  line-height: 50px;
+  line-height: 42px;
   padding: 0 10px;
-  border-radius: 6px;
+  border-radius: 5px;
   left: 100%;
   display: none;
 }
@@ -678,10 +689,10 @@ li {
 .zhuangshi {
   background-image: url("../resource/zhuangshi.png");
   position: absolute;
-  left: 257px;
-  top: 300px;
-  font-size: 51px;
-  width: 72px;
+  left: 380px;
+  top: 280px;
+  font-size: 39px;
+  width: 58px;
   text-align: center;
   color: #0e5495;
   font-weight: bold;
